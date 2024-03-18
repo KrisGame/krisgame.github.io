@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VKClone</title>
+    <link rel="shortcut icon" href="/src/logo.png" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="display: flex; flex-direction: column; align-items: center">
+    <div class="page_main" style="justify-content: center">
+      <div class="login_screen shadow">
+        <p>Войдите в аккаунт</p>
+        <div style="display: flex; flex-direction: column" id="app">
+          <input
+            type="text"
+            placeholder="Логин"
+            v-model="login"
+            class="login_placeholder"
+            style="border-radius: 5px;"
+          />
+          <input
+            type="password"
+            placeholder="Пароль"
+            v-model="pass"
+            class="login_placeholder"
+            style="border-radius: 5px;"
+          />
+          <button class="login_button" v-on:click="check" style="border-radius: 5px;">Войти</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="launch.js"></script>
+</html>
+<script>
+  var vm = new Vue({
+    el: "#app",
+    data: {
+      login: "",
+      pass: "",
+    },
+    methods: {
+      check() {
+        if (this.login == "admin" && this.pass == "admin") {
+          window.location.href = "pages/news_page.html";
+        }
+      },
+    },
+  });
+</script>

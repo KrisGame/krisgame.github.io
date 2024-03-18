@@ -1,0 +1,282 @@
+:root {
+  --first: #dde8f3;
+  --second: hsl(210, 48%, 85%);
+  --third: white;
+  --fourth: hsl(0, 0%, 85%);
+  --text: black;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--first);
+}
+
+p {
+  color: var(--text);
+}
+
+.header {
+  background-color: var(--third);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.nav_lbl {
+  display: none;
+  transition: 0.2s;
+}
+.nav_btn {
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  padding: 0 5px 0 5px;
+  transition: 0.2s;
+  &:hover {
+    background-color: var(--fourth);
+    .nav_lbl {
+      display: block;
+    }
+  }
+}
+.header_img {
+  height: 35px;
+}
+.page_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.post_label {
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.post_image {
+  border-radius: 10px;
+  height: 100%;
+  align-self: center;
+  max-height: 600px;
+}
+
+.post {
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 15px;
+  width: 45vw;
+  background-color: var(--third);
+}
+
+.post_content {
+  margin-top: 5px;
+}
+
+.post_author {
+  display: flex;
+  flex-direction: row;
+}
+
+.post_author_image {
+  border-radius: 25px;
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.post_author_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post_author_label,
+.post_author_time {
+  font-size: small;
+}
+
+.account_block {
+  border-radius: 15px;
+  margin-top: 10px;
+  width: 45vw;
+  background-color: var(--third);
+  padding-bottom: 15px;
+}
+
+.account_avatar,
+.account_cover {
+  object-fit: cover;
+  height: 150px;
+  width: 100%;
+}
+
+.account_cover {
+  border-radius: 15px;
+}
+.account_avatar {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
+
+.account_info {
+  margin-top: 10px;
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.account_name {
+  font-size: larger;
+}
+
+.account_status {
+  font-size: small;
+}
+
+.account_name_status {
+  justify-content: center;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.other_block,
+.photo_block {
+  display: flex;
+  flex-direction: row;
+}
+
+.other_block {
+  width: 45vw;
+}
+
+.photo_block {
+  border-radius: 15px;
+  flex: 4;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding: 15px;
+  background-color: var(--third);
+}
+
+.account_photo {
+  margin-right: 5px;
+  margin-bottom: 5px;
+  object-fit: cover;
+  width: 137px;
+  height: 137px;
+}
+
+.friends_block {
+  width: 100px;
+  height: 386px;
+  border-radius: 15px;
+  flex: 2;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 15px;
+  background-color: var(--third);
+}
+
+.account_friend {
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: var(--second);
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.friend_avatar {
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+.friend_name {
+  font-size: medium;
+  margin-left: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.friend_card {
+  border-radius: 10px;
+  background-color: var(--third);
+  display: flex;
+  flex-direction: row;
+  width: 45vw;
+  margin-top: 15px;
+}
+.friend_photo {
+  margin: 15px 0 15px 15px;
+  border-radius: 5px;
+  height: 75px;
+  width: 75px;
+  object-fit: cover;
+}
+.friend_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+.login_screen {
+  width: 33vw;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 10px 25px 10px;
+  background-color: var(--third);
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.login_placeholder {
+  padding: 7.5px;
+  color: var(--text);
+  margin: 5px;
+  background-color: var(--second);
+}
+.login_button {
+  padding: 7.5px;
+  color: var(--text);
+  background-color: var(--second);
+}
+.post_block {
+  width: auto;
+}
+.music_body {
+  margin-top: 10px;
+  border-radius: 30px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  height: 65px;
+  background-color: white;
+}
+.music_image {
+  border-radius: 50%;
+  height: 100%;
+}
+.music_name {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.music_track {
+  height: 50%;
+}

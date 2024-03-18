@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VSeti</title>
+    <link rel="shortcut icon" href="/src/logo.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body style="display: flex; flex-direction: column">
+    <header class="header shadow">
+      <div class="logo">
+        <img src="/src/logo.png" class="header_img shadow" />
+        <div class="logo_lbl"></div>
+      </div>
+      <div class="nav">
+        <a href="/pages/account_page.html" class="nav_btn">
+          <img src="/src/home_img.png" class="header_img" />
+          <p class="nav_lbl">Моя страница</p>
+        </a>
+        <a href="/pages/news_page.html" class="nav_btn">
+          <img src="/src/news_img.png" class="header_img" />
+          <p class="nav_lbl">Новости</p>
+        </a>
+        <a href="/pages/message_page.html" class="nav_btn">
+          <img src="/src/message_img.png" class="header_img" />
+          <p class="nav_lbl">Сообщения</p>
+        </a>
+        <a href="/pages/friends_page.html" class="nav_btn">
+          <img src="/src/friends_img.png" class="header_img" />
+          <p class="nav_lbl">Друзья</p>
+        </a>
+        <a href="/pages/publics_page.html" class="nav_btn">
+          <img src="/src/publics_img.png" class="header_img" />
+          <p class="nav_lbl">Сообщества</p>
+        </a>
+        <a href="/pages/music_page.html" class="nav_btn">
+          <img src="/src/music_img.png" class="header_img" />
+          <p class="nav_lbl">Музыка</p>
+        </a>
+      </div>
+    </header>
+    <main class="page_main">
+      <div class="friends_page">
+        <div class="friend_card shadow-md">
+          <img
+            src="https://sun9-58.userapi.com/impg/mZ96HrgNqEYRVGv3LHtY3GhJc-Cn1l90sDLu1g/4el-dlAnLY4.jpg?size=838x1080&quality=95&sign=205cf2fde23e2438a7c4d0574bcff0f8&type=album"
+            alt=""
+            class="friend_photo"
+          />
+          <div class="friend_info">
+            <p class="friend_imya">Юрчик Ростовский</p>
+            <div class="friend_sms">Завтра к 8:30</div>
+          </div>
+        </div>
+      </div>
+      <div class="friend_card shadow-md">
+        <img
+          src="https://sun9-3.userapi.com/impg/fBO_RvbZg5Obc7VILNaQ9IG5PNcPvTh5E0PPSg/55slsW4jY8Y.jpg?size=810x1080&quality=95&sign=cf379cc78b01a539b19dae511410aa69&type=album"
+          alt=""
+          class="friend_photo"
+        />
+        <div class="friend_info">
+          <p class="friend_imya">Пётр Сергиенко</p>
+          <div class="friend_sms">привет я опаздываю предупреди</div>
+        </div>
+      </div>
+      <div class="friend_card shadow-md">
+        <img
+          src="https://sun9-50.userapi.com/impg/WpUuODRQKd-5aGtxo4NV3A8Z457EPoVklK19yg/UWHozj-fycU.jpg?size=958x425&quality=95&sign=80c3d96e21cf3b6ba90accefb24c969a&type=album"
+          alt=""
+          class="friend_photo"
+        />
+        <div class="friend_info">
+          <p class="friend_imya">Роман Петров</p>
+          <div class="friend_sms">Да,ок.</div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="/script.js"></script>
+</html>
